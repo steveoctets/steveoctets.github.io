@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steve Octets — small macOS applications</title>
+<meta name="description" content="Small native macOS applications, simple and light. No account to create, no subscription, no telemetry. Your data stays on your Mac.">
+<link rel="icon" href="../images/kodama.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="https://steveoctets.github.io/">
+<link rel="alternate" hreflang="en" href="https://steveoctets.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://steveoctets.github.io/en/">
+</head>
+<body>
+
+<header>
+    <h1>Steve Octets</h1>
+    <p class="accroche">
+        Native macOS applications, simple and light. No account to create, no subscription,
+        no telemetry. Your data stays on your Mac: there is no server behind any of this.
+    </p>
+</header>
+
+<div class="contenu">
+
+<section style="border-top:none; padding-top:0;">
+    <div class="applications">
+
+        <!-- Une application = une carte. Pour en ajouter une, copier ce bloc. -->
+        <a class="application" href="https://steveoctets.github.io/kodama/en/">
+            <img src="../images/kodama.png" alt="">
+            <div>
+                <h3>Kodama</h3>
+                <p>
+                    A web radio streaming application for the menu bar. It plays your stations,
+                    records the tracks they broadcast, and lets you choose which ones to keep.
+                </p>
+                <span class="plateforme">macOS 14+ · free</span>
+            </div>
+        </a>
+
+        <a class="application" href="https://steveoctets.github.io/kumoji/en/">
+            <img src="../images/kumoji.png" alt="">
+            <div>
+                <h3>Kumoji</h3>
+                <p>
+                    A menu bar app for mounting your rclone remotes. Supports encrypted
+                    configurations, with the password kept behind TouchID. Requires rclone and
+                    an existing rclone configuration.
+                </p>
+                <span class="plateforme">macOS 13+ · free</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Steve Octets</p>
+    <p><a href="https://github.com/steveoctets">GitHub</a><a href="https://ko-fi.com/steveoctets">Support</a></p>
+    <p class="langues"><a href="../" onclick="try{localStorage.setItem('langue','fr')}catch(e){}">FR</a> · <strong>EN</strong></p>
+</footer>
+
+<script>
+// La langue du visiteur, une fois pour toutes.
+//
+// Le choix explicite l'emporte et se souvient ; à défaut, on suit le navigateur. La page
+// française est le contenu, pas une page de redirection : un robot qui n'exécute pas ce
+// script voit du vrai texte, et le hreflang ci-dessus lui dit où trouver l'autre version.
+(function () {
+    var choix = null;
+    try { choix = localStorage.getItem('langue'); } catch (e) {}
+    var ici = document.documentElement.lang;
+    var voulue = choix || (navigator.language || 'en').slice(0, 2).toLowerCase();
+    if (voulue !== 'fr') { voulue = 'en'; }
+    if (voulue === ici) { return; }
+    var autre = document.querySelector('link[rel=alternate][hreflang=' + voulue + ']');
+    if (autre) { location.replace(autre.href); }
+})();
+</script>
+
+</body>
+</html>
