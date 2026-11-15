@@ -127,3 +127,6 @@ nav.retour { padding-top: 28px; font-size: 15px; }
     color: var(--encre-douce); border: 1px solid var(--trait);
     border-radius: 20px; padding: 2px 11px;
 }
+
+/* Une commande à copier : elle passe à la ligne plutôt que de déborder sur mobile. */
+.note code { overflow-wrap: anywhere; }

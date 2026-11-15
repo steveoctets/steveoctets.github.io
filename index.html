@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Steve Octets — de petites applications macOS</title>
-<meta name="description" content="De petites applications macOS, natives, simples et légères. Pas de compte à créer, pas d'abonnement, pas de télémétrie. Vos données restent sur votre Mac.">
+<title>Steve Octets — de petites applications macOS et des plugins Omarchy</title>
+<meta name="description" content="De petites applications macOS natives et des plugins pour Omarchy (Linux), simples et légers. Pas de compte à créer, pas d'abonnement, pas de télémétrie. Vos données restent sur votre machine.">
 <link rel="icon" href="images/kodama.png">
 <link rel="stylesheet" href="style.css">
 <link rel="alternate" hreflang="fr" href="https://steveoctets.github.io/">
@@ -16,15 +16,16 @@
 <header>
     <h1>Steve Octets</h1>
     <p class="accroche">
-        Des applications macOS natives, simples et légères. Pas de compte à créer, pas
-        d'abonnement, pas de télémétrie. Vos données restent sur votre Mac : il n'y a
-        aucun serveur derrière.
+        Des applications macOS natives et des plugins pour Omarchy, simples et légers.
+        Pas de compte à créer, pas d'abonnement, pas de télémétrie. Vos données restent
+        sur votre machine : il n'y a aucun serveur derrière.
     </p>
 </header>
 
 <div class="contenu">
 
 <section style="border-top:none; padding-top:0;">
+    <h2>Applications macOS</h2>
     <div class="applications">
 
         <!-- Une application = une carte. Pour en ajouter une, copier ce bloc. -->
@@ -54,6 +55,50 @@
             </div>
         </a>
 
+    </div>
+</section>
+
+<section>
+    <h2>Plugins Omarchy</h2>
+    <p>
+        Des widgets pour la barre d'<a href="https://omarchy.org">Omarchy</a>, le bureau Linux
+        bâti sur Arch et Hyprland. Ils suivent le thème et la langue d'Omarchy, en
+        français comme en anglais.
+    </p>
+    <div class="applications">
+
+        <a class="application" href="https://github.com/snouhaud/omarchy-agenda">
+            <img src="images/agenda.svg" alt="">
+            <div>
+                <h3>Agenda</h3>
+                <p>
+                    Votre prochaine réunion à côté de l'horloge et, d'un clic, l'agenda des
+                    jours qui viennent, avec un bouton pour rejoindre Teams, Zoom ou Meet. Lit
+                    le lien ICS publié par Outlook / Microsoft 365, Google ou iCloud, sans
+                    connexion à un compte.
+                </p>
+                <span class="plateforme">Omarchy · gratuit</span>
+            </div>
+        </a>
+
+        <a class="application" href="https://github.com/snouhaud/rclone-mounter">
+            <img src="images/rclone-mounter.svg" alt="">
+            <div>
+                <h3>rclone mounter</h3>
+                <p>
+                    Le pendant Linux de Kumoji : vos remotes rclone, un interrupteur chacun,
+                    montés en cache complet, en streaming ou en lecture seule. Prend en charge
+                    les configurations chiffrées, avec le mot de passe gardé dans le trousseau.
+                </p>
+                <span class="plateforme">Omarchy · gratuit</span>
+            </div>
+        </a>
+
+    </div>
+    <div class="note">
+        <p>Pour installer un plugin, une commande suffit :</p>
+        <p><code>omarchy plugin add https://github.com/snouhaud/omarchy-agenda.git --enable</code></p>
+        <p><code>omarchy plugin add https://github.com/snouhaud/rclone-mounter.git --enable</code></p>
     </div>
 </section>
 
