@@ -17,6 +17,7 @@ README tient lieu de documentation.
 | -------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 | Agenda         | [snouhaud/omarchy-agenda](https://github.com/snouhaud/omarchy-agenda) | `omarchy plugin add https://github.com/snouhaud/omarchy-agenda.git --enable` |
 | rclone mounter | [snouhaud/rclone-mounter](https://github.com/snouhaud/rclone-mounter) | `omarchy plugin add https://github.com/snouhaud/rclone-mounter.git --enable` |
+| Obsidian Tasks | [snouhaud/obsidian-tasks](https://github.com/snouhaud/obsidian-tasks) | `omarchy plugin add https://github.com/snouhaud/obsidian-tasks.git --enable` |
 
 ## Ajouter une application
 
